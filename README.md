@@ -2,7 +2,7 @@
 
 Welcome to my Code Golf Playground! ⛳️
 
-![Code Golf](https://your-image-url.com)
+![Code Golf](./codegolf.jpg)
 
 ## Table of Contents
 
