@@ -8,7 +8,6 @@ Welcome to my Code Golf Playground! ⛳️
 
 - [Introduction](#introduction)
 - [Challenges](#challenges)
-- [Solutions](#solutions)
 - [Playing Along](#playing-along)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,11 +20,18 @@ Feel free to explore my golfed code and learn different techniques used in the a
 
 ## Challenges
 
-Browse the `challenges/` directory to discover the code golf challenges I've taken on. Each challenge comes with a description and my golfed solution.
+All challenges are organized within the `src` folder. Each challenge has its own subfolder named like "hole X - [challenge name]," containing the challenge prompt and my golfed solution.
 
-## Solutions
-
-Check the `solutions/` directory for the actual code of my solutions. I strive to keep my code concise and efficient, showcasing different approaches to solving challenges in as few characters as possible.
+For example:
+```
+src/
+|-- hole 1 - FizzBuzz
+|   |-- prompt.txt
+|   |-- solution.js
+|-- hole 2 - PI
+|   |-- prompt.txt
+|   |-- solution.py
+```
 
 ## Playing Along
 
