@@ -2,7 +2,7 @@
 
 Welcome to my Code Golf Playground! ⛳️
 
-![Code Golf](./codegolf.jpg)
+<img src="./codegolf.jpg" alt = "Code Golf" width="400">
 
 ## Table of Contents
 
