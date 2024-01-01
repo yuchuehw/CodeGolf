@@ -1,5 +1,5 @@
 import sys
-m,n,q=str.replace,divmod,['','c','cc','ccc','cb','b','bc','bcc','bccc','ca'];r="ⅩⅤⅠ","ⅭⅬⅩ","ⅯⅮⅭ"
+m,n,q=str.replace,divmod,'.c.cc.ccc.cb.b.bc.bcc.bccc.ca'.split('.');r="ⅩⅤⅠ","ⅭⅬⅩ","ⅯⅮⅭ"
 def p(z):print(z,end="")
 for(i)in sys.argv[1:]:
 	k,l=n(int(i),1000);p(k*"Ⅿ");j=2
