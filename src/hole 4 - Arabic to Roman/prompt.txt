@@ -1,0 +1,5 @@
+For each numeric argument in Arabic numerals, print the same number in Roman numerals.
+
+You may use either ASCII or UTF-8 (U+2160 to U+2188) for Roman numerals.
+
+The numbers range from 1 to 3999 inclusive.
