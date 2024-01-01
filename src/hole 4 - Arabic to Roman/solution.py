@@ -1,5 +1,5 @@
 import sys
-m,n,o,q=str.replace,divmod,list,{9:"ca",8:"bccc",7:"bcc",6:"bc",5:"b",4:"cb",3:"ccc",2:"cc",1:"c",0:""};r=o("ⅩⅤⅠ"),o("ⅭⅬⅩ"),o("ⅯⅮⅭ")
+m,n,q=str.replace,divmod,['','c','cc','ccc','cb','b','bc','bcc','bccc','ca'];r="ⅩⅤⅠ","ⅭⅬⅩ","ⅯⅮⅭ"
 def p(z):print(z,end="")
 for(i)in sys.argv[1:]:
 	k,l=n(int(i),1000);p(k*"Ⅿ");j=2
