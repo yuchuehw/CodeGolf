@@ -1,0 +1,1 @@
+Print all the prime numbers from 1 to 100 inclusive, each on their own line. 
