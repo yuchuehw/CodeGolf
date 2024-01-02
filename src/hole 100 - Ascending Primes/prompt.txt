@@ -1,0 +1,1 @@
+Print all primes whose decimal digits are distinct and appear in ascending order. There are 100 such primes, the largest being 23456789. 
