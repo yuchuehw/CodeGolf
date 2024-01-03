@@ -1,3 +1,9 @@
+"""
+explanation: observe the pattern of c,cc,ccc,cb,b,bc,bcc,bccc,ca
+for 0~10 a,b,c are X V I
+for 10~100         C L X
+...
+"""
 import sys
 m,n,q=str.replace,divmod,'.c.cc.ccc.cb.b.bc.bcc.bccc.ca'.split('.');r="ⅩⅤⅠ","ⅭⅬⅩ","ⅯⅮⅭ"
 def p(z):print(z,end="")
