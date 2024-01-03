@@ -1,0 +1,18 @@
+Forsyth–Edwards Notation (FEN) is a standard notation for describing a particular board position of a chess game.
+The standard starting chess position is encoded as
+
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+
+The first of the space separated groups is the main part which encodes the physical positions of the pieces on the board.
+Each rank (row) is described, starting with rank 8 and ending with rank 1; within each rank, the contents of each square are described from file (column) "a" through file "h". Each piece is identified by a single letter taken from the standard English names (Pawn, kNight, Bishop, Rook, Queen, King). White pieces are designated using upper-case letters ("PNBRQK") while black pieces use lowercase ("pnbrqk"). Empty squares are noted using digits 1 through 8 (the number of empty squares), and "/" separates ranks.
+
+Given a FEN, output the board using the chess unicode characters and a space for empty squares. The output corresponding to the FEN of the starting position given above should be
+
+♜♞♝♛♚♝♞♜
+♟♟♟♟♟♟♟♟
+
+
+
+
+♙♙♙♙♙♙♙♙
+♖♘♗♕♔♗♘♖
