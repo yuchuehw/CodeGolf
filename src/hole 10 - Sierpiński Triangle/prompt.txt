@@ -1,0 +1,20 @@
+The Sierpiński triangle is a fractal with the overall shape of an equilateral triangle, subdivided recursively into smaller equilateral triangles.
+
+A Sierpiński triangle of order 4 should look like this, print such an output:
+
+               ▲
+              ▲ ▲
+             ▲   ▲
+            ▲ ▲ ▲ ▲
+           ▲       ▲
+          ▲ ▲     ▲ ▲
+         ▲   ▲   ▲   ▲
+        ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲
+       ▲               ▲
+      ▲ ▲             ▲ ▲
+     ▲   ▲           ▲   ▲
+    ▲ ▲ ▲ ▲         ▲ ▲ ▲ ▲
+   ▲       ▲       ▲       ▲
+  ▲ ▲     ▲ ▲     ▲ ▲     ▲ ▲
+ ▲   ▲   ▲   ▲   ▲   ▲   ▲   ▲
+▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲
