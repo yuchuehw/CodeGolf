@@ -1,3 +1,7 @@
+/*
+translated from main.py
+see how i generated s in magic-s-generate.py
+*/
 class M{
     public static void main(String[]a) {
         String s="..ETINAMSDRGUKWOHBLZFCP.VX.Q.YJ.56.7...8.......94.......3...2.10";
