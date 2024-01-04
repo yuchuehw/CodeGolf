@@ -1,0 +1,7 @@
+Using ▄ (U+2584 Lower Half Block) to represent a dot, encode the argument from alphanumeric into International Morse Code.
+
+    The length of a dot is one unit.
+    A dash is three units.
+    The space between parts of the same letter is one unit.
+    The space between letters is three units.
+    The space between words is ten units.
