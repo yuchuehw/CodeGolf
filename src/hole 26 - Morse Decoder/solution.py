@@ -1,5 +1,6 @@
 """
 see the generation of string s in magic-s-generate.py
+as of 01/04/2023 solution ranked 77th in bytes and 93rd in chrs.
 """
 import sys
 s="..ETINAMSDRGUKWOHBLZFCP.VX.Q.YJ.56.7...8.......94.......3...2.10";d={s.index(i):i for i in s};r=str.replace
