@@ -1,0 +1,8 @@
+The universe of the Game of Life is a grid of square cells, each of which is either alive ("#") or dead ("."). Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
+
+    Any dead cell with exactly three live neighbours becomes a live cell.
+    All other dead cells stay dead.
+    Any live cell with two or three live neighbours survives.
+    All other live cells die.
+
+Given a 32×32 grid, output the state in the next step. Assume that every cell outside the grid is dead. 
