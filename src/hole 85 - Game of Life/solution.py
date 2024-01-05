@@ -1,3 +1,6 @@
+"""
+rank 105th in bytes and chrs as of 01/05/2024
+"""
 import sys
 m=[list(_)for _ in sys.argv[1].split("\n")];h=w=32;n=[[0]*h for _ in range(w)]
 for i in range(h):
