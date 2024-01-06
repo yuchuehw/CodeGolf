@@ -1,0 +1,42 @@
+GITHUB ISSUE PAGE:https://github.com/code-golf/code-golf/issues/816
+
+Encode ASCII string to a Version-1 QR code of this ASCII-art format, where all the v and ^ must be filled with "#" and spaces.
+
+    #######  vv^^ #######
+    #     #  vv^^ #     #
+    # ### # #vv^^ # ### #
+    # ### #  vv^^ # ### #
+    # ### #  vv^^ # ### #
+    #     #  vv^^ #     #
+    ####### # # # #######
+            #vv^^
+    ### #####vv^^##   #
+    vv^^vv ^^vv^^vv^^vv^^
+    vv^^vv#^^vv^^vv^^vv^^
+    vv^^vv ^^vv^^vv^^vv^^
+    vv^^vv#^^vv^^vv^^vv^^
+            #vv^^vv^^vv^^
+    ####### #vv^^vv^^vv^^
+    #     # #vv^^vv^^vv^^
+    # ### # #vv^^vv^^vv^^
+    # ### #  vv^^vv^^vv^^
+    # ### # #vv^^vv^^vv^^
+    #     # #vv^^vv^^vv^^
+    ####### #vv^^vv^^vv^^
+
+The 10 vertical "strips" of ^^ or vv must be written from right to left. The bits in a strip are written in a zig-zag order: ^^ zig-zags upwards, and vv zig-zags downwards. The bit on the right always precedes the one on its left.
+
+    ^^ ..    vv 10
+    ^^ 98    vv 32
+    ^^ 76    vv 54
+    ^^ 54    vv 76
+    ^^ 32    vv 98
+    ^^ 10    vv ..
+
+The strips are filled with data from a bitstream:
+
+    0100  00010001  01001000  01100101  ...  01101111  0000  11000000  11111111  ...  11101110
+    Enc   Length    'H'       'e'                 'o'  End   c0        ff             ee
+    (4)   (17)      (17-byte ASCII message)            (0)   (7 error correction bytes)
+
+To encode a bit from the bitstream to a strip, determine the coordinates (x, y) of the current position in the bitmap with the origin (0, 0) at the top-left corner, invert the bit if (x+y)%2 = 0, and write the value to this position ("#" = 1, space = 0). 
