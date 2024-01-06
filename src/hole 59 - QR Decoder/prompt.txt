@@ -1,0 +1,44 @@
+
+
+Decode a Version-1 QR code given in this ASCII-art format, where all the v and ^ are filled with "#" and spaces, encoding a message.
+
+    #######  vv^^ #######
+    #     #  vv^^ #     #
+    # ### # #vv^^ # ### #
+    # ### #  vv^^ # ### #
+    # ### #  vv^^ # ### #
+    #     #  vv^^ #     #
+    ####### # # # #######
+            #vv^^
+    ### #####vv^^##   #
+    vv^^vv ^^vv^^vv^^vv^^
+    vv^^vv#^^vv^^vv^^vv^^
+    vv^^vv ^^vv^^vv^^vv^^
+    vv^^vv#^^vv^^vv^^vv^^
+            #vv^^vv^^vv^^
+    ####### #vv^^vv^^vv^^
+    #     # #vv^^vv^^vv^^
+    # ### # #vv^^vv^^vv^^
+    # ### #  vv^^vv^^vv^^
+    # ### # #vv^^vv^^vv^^
+    #     # #vv^^vv^^vv^^
+    ####### #vv^^vv^^vv^^
+
+The 10 vertical "strips" of ^^ or vv must be read from right to left. The bits in a strip are stored in a zig-zag order: ^^ zig-zags upwards, and vv zig-zags downwards. The bit on the right always precedes the one on its left.
+
+    ^^ ..    vv 10
+    ^^ 98    vv 32
+    ^^ 76    vv 54
+    ^^ 54    vv 76
+    ^^ 32    vv 98
+    ^^ 10    vv ..
+
+To decode a bit off of a strip, read the value from the QR code bitmap ("#" = 1, space = 0) and invert it if (x+y)%2 = 0, where (x, y) are the coordinates of the bit in the bitmap with the origin (0, 0) at the top-left corner.
+
+This will yield a bitstream like:
+
+    0100  00010001  01001000  01100101  01101100 ...
+    Enc   Length    'H'       'e'       'l'
+    (4)   (17)      (17-byte ASCII message)
+
+Print the 17 bytes of ASCII stored in the QR code. 
