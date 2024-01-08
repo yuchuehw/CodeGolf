@@ -1,0 +1,3 @@
+A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output. Produce such a program.
+
+Trailing whitespace is NOT stripped from the output for this hole. (Consequently, if your submission doesn't pass, try adding a line break at the end.) 
