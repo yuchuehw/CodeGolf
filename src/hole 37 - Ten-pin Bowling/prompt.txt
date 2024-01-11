@@ -1,0 +1,16 @@
+Given a series of ten-pin bowling scoreboards, determine the final scores based on the traditional scoring method.
+
+A game consists of ten frames. Each frame, players get up to two rolls to knock down all ten pins.
+
+If a player gets a strike in the final frame, they get two extra rolls. If they get a strike in one of the first nine frames, the value of the following two rolls, which may cover multiple frames, is added as a bonus.
+
+If a player gets a spare in the final frame, they get one extra roll. If they get a spare in one of the first nine frames, the value of the following roll is added as a bonus.
+
+Each argument represents one game of bowling for one player. For each roll, a single character represents the number of pins knocked down. Frames are separated by spaces. The following symbols are used.
+X	Strike - all ten pins were knocked down on the first roll of a frame, or the bonus rolls of the final frame. A strike in the first nine frames is represented by a space followed by an X, as if the strike happened on the frame’s second roll, even though the frame consists of a single roll.
+/	Spare - all remaining pins were knocked down on the second roll of a frame, or the second bonus roll of the final frame.
+F	Foul - part of the bowler’s body went past the foul line.
+-	Miss - No pins were knocked down.
+⑤⑥⑦⑧	Split - the foremost pin is knocked down and there is a gap of at least one pin between the pins that remain standing.
+
+Output the total score for each game on a separate line. The total score is the total number of pins knocked down plus strike and spare bonuses. 
