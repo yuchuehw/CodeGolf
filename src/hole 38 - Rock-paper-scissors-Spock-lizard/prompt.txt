@@ -1,0 +1,5 @@
+Judge games of "rock-paper-scissors" with additional weapons:
+
+✂ cuts 📄 covers 💎 crushes 🦎 poisons 🖖 smashes ✂ decapitates 🦎 eats 📄 disproves 🖖 vaporizes 💎 crushes ✂.
+
+Each argument is a string of two emoji encoded in UTF-8. For each argument, print a line like 🦎 poisons 🖖 describing the game outcome, or Tie if they are equal.
