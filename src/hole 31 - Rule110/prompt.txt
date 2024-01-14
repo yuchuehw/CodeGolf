@@ -1,0 +1,28 @@
+Print the first 100 rows in the Rule 110 cellular automaton starting from an initial single living cell.
+
+Each new row in the life of the automaton should be a new line, and the rules for whether a cell is alive or dead depends on whether it was alive on the previous iteration, as well as the state of the two neighbouring cells.
+
+The rules which dictate whether a cell is alive or dead in the next iteration are as follows:
+111	0
+110	1
+101	1
+100	0
+011	1
+010	1
+001	1
+000	0
+
+where 1 is alive, 0 is dead, and the middle digit represents the previous state of the current cell.
+
+The first 10 rows are shown here:
+
+         █
+        ██
+       ███
+      ██ █
+     █████
+    ██   █
+   ███  ██
+  ██ █ ███
+ ███████ █
+██     ███
