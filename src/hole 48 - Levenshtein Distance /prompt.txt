@@ -1,0 +1,10 @@
+The Levenshtein distance is the minimum number of single character edits that are needed to transform one word into another. The available edits are deletion, insertion, or substitution of a single character.
+
+For example the Levenshtein distance between “shine” and “train” is 4:
+
+    shine → shin (deletion of 'e')
+    shin → tshin (insertion of 't')
+    tshin → trhin (substitution of 's' for 'r')
+    trhin → train (substitution of 'h' for 'a')
+
+For each pair of words per argument, print the Levenshtein distance on its own line. 
