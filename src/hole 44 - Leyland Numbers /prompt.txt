@@ -1,0 +1,7 @@
+
+
+A Leyland number is of the form xy + yx where 1 < y ≤ x.
+
+For example, 8 is a Leyland number because 22 + 22 = 8.
+
+Print all the Leyland numbers from 1 to 100,000,000,000 inclusive, each on their own line. 
