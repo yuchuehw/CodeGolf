@@ -1,0 +1,3 @@
+Every natural number can be written uniquely as the sum of Fibonacci numbers in a way that avoids using consecutive Fibonacci numbers. For example, 10 = 8 + 2, and 64 = 55 + 8 + 1. This sum is called the Zeckendorf representation.
+
+Print the Zeckendorf representation for each input argument. Terms should be listed in decreasing order separated by ' + '. For example, input 10 should produce 8 + 2. 
