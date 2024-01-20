@@ -1,0 +1,6 @@
+The Kolakoski sequence is a self referential sequence where the nth element is the length of the nth run of same numbers in the sequence. This has the interesting property where if you take the run lengths of this sequence, then you will get the same sequence back again. For example, the sequence starting with (1, 2) looks like:
+
+    1 2 2 1 1 2 1 2 2 1 2 2 1 1 2 1 1 2 2 1 2 1 1 2 1…
+    1  2   2  1 1  2  1  2   2  1  2   2  1 1  2  1 1…
+
+Beginning with (1, 2) print the first 1,000 elements in the Kolakoski sequence, separated by spaces. 
