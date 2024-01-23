@@ -1,0 +1,43 @@
+
+
+Format a piece of text in the style of Star Wars opening crawl. Here is an example. Input:
+
+5 21
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Corresponding output:
+
+     Lorem ipsum dolor sit
+     amet,     consectetur
+    adipiscing elit, sed do
+    eiusmod          tempor
+   incididunt  ut  labore et
+   dolore magna aliqua.
+
+  Ut  enim  ad  minim veniam,
+ quis   nostrud   exercitation
+ ullamco   laboris   nisi   ut
+aliquip     ex    ea    commodo
+consequat.
+
+Here is how this works. Each test case consists of the following:
+
+    A line containing the initial indentation I and the initial line width W, separated by a space.
+    Several lines of text, each representing a paragraph of the output.
+
+Split the text into centred lines that get progressively longer as follows:
+
+The first line starts with I spaces and should contain as many words as you can fit in W characters (so lines may only be wrapped where there are spaces in the input).
+
+If the resulting line contains fewer than W characters, pad out the line by adding spaces between the words as evenly as possible to get to W characters in total. If some gaps require extra spaces, add them starting from the left. Example:
+
+May the Force be with you!
+
+This line contains 26 characters and has 5 gaps. If we had W = 33, the result should look like:
+
+May   the   Force  be  with  you!
+
+After every pair of lines, reduce I by 1 and increase W by 2. Continue this way through all of the input. The last line of each paragraph should not be justified (i.e. don't add any spaces to it). And paragraphs should be separated by an empty line that does count towards the progression of I and W.
+
+This hole contains multiple test cases (one argument per test case). Separate the output for multiple test cases by an empty line. 
