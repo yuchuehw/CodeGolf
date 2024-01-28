@@ -1,0 +1,41 @@
+For each set of three musical notes forming a triad, print the name of the chord they form, consisting of the root note and the type of triad.
+
+Each note is represented as an uppercase letter, optionally followed by a single accidental, either sharp (♯ U+266F) or flat (♭ U+266D).
+
+Background:
+
+There are twelve pitch classes in twelve-tone equal temperament, some of which have multiple names due to ♯ and ♭ raising and lowering the pitch, respectively. They are, in ascending order:
+0	A	
+1	A♯	B♭
+2	B	C♭
+3	C	B♯
+4	C♯	D♭
+5	D	
+6	D♯	E♭
+7	E	F♭
+8	F	E♯
+9	F♯	G♭
+10	G	
+11	G♯	A♭
+
+A triad consists of a root note on the bottom followed by two thirds stacked on top of it. Thirds describe the distance between the preceding and following note. A third can be either of two types:
+Minor third	3	A C (note 0 to note 3)
+Major third	4	C E (note 3 to note 7)
+
+Being that there are 2 thirds in a triad and each third can be of 2 different types, there are 4 total “types” of triads. They are:
+Diminished Triad	Minor, Minor	B D F
+Minor Triad	Minor, Major	E G B
+Major Triad	Major, Minor	C E G
+Augmented Triad	Major, Major	D F♯ A♯
+
+Input:
+
+    Triads of notes will always be written out so that the letters in the name used ascend by 2 between each third (wrapping back to A after G). Therefore, a triad consisting of notes 3, 6, and 9 may be written as B♯ D♯ F♯ or C E♭ G♭, but not, for example, as C D♯ F♯.
+    The notes may appear in any order, e.g., C E G and E C G both may appear.
+
+Output:
+
+    Chords are named by the root note followed by nothing for major, m for minor, ° U+00B0 for diminished, and + for augmented.
+    The spelling of the root note in the output must match the input, e.g. the expected output for C E♭ G♭ is C°, not B♯°.
+
+Note: to find the root, look only at the letters. E G♯ C and E G♯ B♯ cannot be told apart by a method that only considers note distances. The root is the note whose letter comes 2 and 4 letters before the other two letters in the chord. The expected outputs are C+ and E+ respectively. 
