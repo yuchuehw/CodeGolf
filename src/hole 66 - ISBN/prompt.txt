@@ -1,0 +1,5 @@
+
+
+Calculate the check digit for these incomplete ISBNs. If the check digit would be 10, write "X" instead.
+
+The check digit of a-bcdef-ghi-? is computed as − 10a − 9b − 8c − … − 2i, modulo 11. Dashes may occur in varying positions and are ignored. 
