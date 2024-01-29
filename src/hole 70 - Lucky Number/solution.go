@@ -1,0 +1,1 @@
+package main;import "fmt";func main(){l:=make([]int, 4406);for i:=1;i<4406;i++{l[i]=2*i-1};fmt.Println(1);for i:=2;i<1001;i++{j:=l[i];fmt.Println(j);for k:=1;k<len(l);k++{if k%j== 0{l[k]=-1}};var result[]int;for _, value:=range l{if value!=-1{result=append(result, value)}};l=result}}
