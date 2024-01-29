@@ -1,0 +1,20 @@
+
+
+The lucky numbers are an integer sequence that results from a certain "sieve" process:
+
+Start from the odd natural numbers a = 1 3 5 7 … viewed as a 1-indexed infinite sequence.
+
+For each k = 2…∞, replace a with the result of deleting every a[k]-th term from a.
+
+Print the first 1,000 terms of the resulting sequence.
+
+Start:
+    1 3 5 7 9 11 13 15 …
+      ^
+Delete every 3rd term and advance:
+    1 3 7 9 13 15 19 21 …
+        ^
+Delete every 7th term and advance:
+    1 3 7 9 13 15 21 25 …
+          ^
+
