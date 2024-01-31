@@ -1,0 +1,11 @@
+
+
+Transform a time distance given as a number of seconds to a human-friendly string representation.
+
+    Zero represents the current moment, to be printed as now.
+    Positive values represent the future, to be printed with the in prefix.
+    Negative values represent the past, to be printed with the ago suffix.
+
+The largest possible unit of time among a second, a minute (60 seconds), an hour (60 minutes), a day (24 hours), a week (7 days), a month (30 days) and a year (365 days) is always chosen and the quantity is always rounded towards zero.
+
+The correct singular/plural of each unit must be used. If the quantity is 1, print a month and an hour rather than 1 month and 1 hour. 
