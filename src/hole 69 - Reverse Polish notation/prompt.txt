@@ -1,0 +1,7 @@
+RPN (Reverse Polish Notation) is a way of writing expressions such that operators are written after their operands: 3 2 + rather than (3+2).
+
+Each argument is an RPN expression, given as a space-separated list of tokens: either a number 0…32767 or an operator (addition +, subtraction -, multiplication * or integer division /).
+
+Evaluate and print the result of each expression on its own line.
+
+The result of each operation is a non-negative integer not exceeding 32,767. Division is guaranteed to have an exact integer result.
