@@ -1,3 +1,6 @@
+"""
+as of 02/09/2024 ranked 59 in bytes and 31 in chrs.
+"""
 import sys
 s="ABCDEFGHIJKLMNOPQRSTUVWXYZ";S="0123456789"+s+s.lower()+"-"
 for A in sys.argv[1:]:
