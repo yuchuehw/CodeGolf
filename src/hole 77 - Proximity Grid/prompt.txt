@@ -1,0 +1,5 @@
+
+
+A grid is a 9x9 square of characters representing an arrangement of points, some of which are walls, denoted by #'s, or sources, denoted by 0's; every other point is passible, denoted with -'s.
+
+For a series of grids, compute the length of the shortest path connecting each passible point to a source. A path must move horizontally or vertically through the grid and cannot pass through walls. Output each grid with every passible point replaced by its distance to a source written in base62 (0-9 A-Z a-z); points which cannot be connected to a source should remain unchanged. 
