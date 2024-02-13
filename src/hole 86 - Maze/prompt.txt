@@ -1,0 +1,10 @@
+For a given maze, find the shortest path from Start to End points. Output the path in the maze with dots. For example:
+
+###########       ###########
+#S#      E#       #S#  ....E#
+# ### #####       #.###.#####
+#   #     #   →   #...#.....#
+### ##### #       ###.#####.#
+#         #       #  .......#
+###########       ###########
+
