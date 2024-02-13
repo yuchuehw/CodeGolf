@@ -1,0 +1,1 @@
+For each fraction argument a/b, print its decimal expansion. If the decimal expands infinitely, print the finite part followed by the repeating part in parenthesis. 
