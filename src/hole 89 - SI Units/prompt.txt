@@ -1,0 +1,1 @@
+The International System of Units (SI) defines 7 base units: s (second), m (meter), kg (kilogram), A (ampere), K (kelvin), mol (mole) and cd (candela). In addition to base units, there are 22 derived units, which can all be represented as products of powers of these base units.
